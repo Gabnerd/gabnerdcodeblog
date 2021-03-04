@@ -1,0 +1,120 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "font-awesome";
+ *{
+     margin:0px;
+     padding: 0px;
+ }
+
+ 
+
+ $post-border: #0A5B94;
+$post-background: #0A5B94;
+$card-background: #3088df79;
+$card-title: #073657;
+
+.row {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 100px);
+
+    .col {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #00000022;
+        margin: 5px 5px 0px 5px;
+
+        .titulo-lists {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+
+        }
+    }
+
+    #categorias {
+        padding: 5px 10px 0px 10px;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        ul {
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #00000022;
+            width: 90%;
+            height: 90%;
+
+            li {
+                padding: 5px 10px;
+
+                a {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 0.9rem;
+                    padding: 2px 5px;
+                    color: #FFF;
+                    border-radius: 5px;
+                    border: 1px solid $post-border;
+                    background-color: $post-background;
+                }
+            }
+        }
+    }
+
+    #posts {
+        padding: 5px 10px 0px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        ul {
+            margin-top: 5px;
+            border-radius: 5px;
+            padding: 4px 5px;
+            border: 1px solid #00000022;
+            width: 95%;
+            height: 89%;
+
+            .post-card {
+                border-radius: 5px;
+                border: 1px solid #00000022;
+                padding: 5px 15px;
+                background-color: $card-background;
+                margin-bottom: 5px;
+
+                .post-card-title {
+                    font-size: 1.5rem;
+                    padding-bottom: 10px;
+                    display: block;
+                    color: $card-title;
+                }
+
+                .post-card-category {
+                    font-family: Arial, Helvetica, sans-serif;
+                    border-radius: 1rem;
+                    border: 1px solid $post-border;
+                    background-color: $post-background;
+                    font-size: 0.7rem;
+                    width: fit-content;
+                    padding: 2px 5px;
+                    color: white;
+                }
+            }
+        }
+    }
+
+}
+

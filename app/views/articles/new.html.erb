@@ -1,0 +1,24 @@
+<h1>Novo Artigo</h1>
+
+<%= form_with model: @article do |form| %>
+
+<div>
+<%= form.label :title %><br>
+<%= form.text_field :title %>
+</div>
+
+<div>
+<%= form.label :body %><br>
+<%= form.text_area :body %>
+</div>
+
+<div>
+<%= form.label :category %><br>
+<%= form.select(:category_id, Category.all.collect {|c| [c.name, c.id]}, :prompt => true)%>
+</div>
+
+<div>
+    <%= form.submit %>
+</div>
+
+<% end %>

@@ -1,0 +1,29 @@
+<div id="banner">
+<h1>GabnerdCodeBlog</h1>
+</div>
+<div class="row">
+    <div class="col" id="categorias">
+        <h1 class="titulo-lists">Categorias</h1>
+        <ul class="lista-style-none">
+            <%@categories.each do |category|%>
+                <li><a href="/categoria/<%= category.id %>"><%= category.name %></a></li>
+            <%end%>
+        </ul>
+    </div>
+    <div class="col" id="posts">
+        <h1 class="titulo-lists">Posts</h1>
+        <ul class="lista-style-none">
+            <%@articles.each do |article|%>
+            <li>
+                <div class="post-card">
+                <a href="/post/<%= article.id %>">
+                    <p class="post-card-title"><%= article.title %></p>
+                </a>
+                    <a href="categoria/<%= article.category.id %>"><p class="post-card-category"><%= article.category.name %></p></a>
+                </div>
+            </li>
+            <%end%>
+        </ul>
+    </div>
+    
+</div>

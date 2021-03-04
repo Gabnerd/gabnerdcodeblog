@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   post 'autAdm', to: "adm#aut"
   get 'adm/i5G3eBnGXpeinkWpFz9p4ENKRKG6NX9wRGpwHT3e', to: "adm#dashboard"
   get 'adm/i5G3eBnGXpeinkWpFz9p4ENKRKG6NX9wRGpwHT3e/novoArtigo', to: "articles#new"
+  get 'adm/i5G3eBnGXpeinkWpFz9p4ENKRKG6NX9wRGpwHT3e/novaCategoria', to: "category#new"
 
   resources :articles
   resources :categories

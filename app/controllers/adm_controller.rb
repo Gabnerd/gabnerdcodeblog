@@ -4,7 +4,7 @@ class AdmController < ApplicationController
 
   def aut
     @senha = params[:password]
-    if @senha == "teste"
+    if @senha == "leirbag132"
       redirect_to '/adm/i5G3eBnGXpeinkWpFz9p4ENKRKG6NX9wRGpwHT3e'
     end
   end

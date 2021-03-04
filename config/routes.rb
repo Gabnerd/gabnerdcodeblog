@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   get 'adm/i5G3eBnGXpeinkWpFz9p4ENKRKG6NX9wRGpwHT3e/novoArtigo', to: "articles#new"
 
   resources :articles
+  resources :categories
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

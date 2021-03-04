@@ -81,4 +81,7 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV['DATABASE'] %>
+  host: ec2-50-16-108-41.compute-1.amazonaws.com
+  database: dbt2abf04fj0b9
+  username: sjhhehvvpzpnnd
+  password: bbea35a19a165205c0babb09441ed939859e3a157ea969048919530dc21f1d7b

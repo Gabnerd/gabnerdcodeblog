@@ -6,7 +6,7 @@
         <h1 class="titulo-lists">Categorias</h1>
         <ul class="lista-style-none">
             <%@categories.each do |category|%>
-                <li><a href="/categoria/<%= category.id %>"><%= category.name %></a></li>
+                <a href="/categoria/<%= category.id %>"><li><%= category.name %></li></a>
             <%end%>
         </ul>
     </div>

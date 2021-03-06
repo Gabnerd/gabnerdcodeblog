@@ -35,9 +35,30 @@ a:visited {
         font-weight: lighter;
         font-weight: bolder;
     }
+    @media only screen and (max-width: 768px) {
+        h1{
+        font-size: 2rem;
+        }
+    }
 }
 
-
+.categoria-button{
+    display: none;
+    @media only screen and (max-width: 768px){
+        display: block;
+        border-radius: 2px;
+        border: 1px solid #0005;
+        border-left: 0px;
+        margin-left: -1px;
+        height: fit-content;
+        padding: 2px 5px;
+        margin-top: 7px;
+        button{
+            background-color: #0000;
+            border: 0px;
+        }
+    }
+}
 
 #article-page {
     display: flex;

@@ -13,8 +13,24 @@ $background-button-back: #073657;
         margin-right: 10px;
         color: white;
     }
+
+    .button-back#mobile{
+        display: none;
+        @media only screen and (max-width: 768px){
+            display: block;
+        }
+    }
+
+    .button-back#desktop{
+        display: block;
+        @media only screen and (max-width: 768px){
+            display: none;
+        }
+    }
+
     .header-sidebyside{
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
 }

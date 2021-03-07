@@ -75,6 +75,20 @@ a:visited {
         color: #FFF;
     }
 
+    .button-back#mobile{
+        display: none;
+        @media only screen and (max-width: 768px){
+            display: block;
+        }
+    }
+
+    .button-back#desktop{
+        display: block;
+        @media only screen and (max-width: 768px){
+            display: none;
+        }
+    }
+
     #article-content {
         width: 60%;
         min-height: calc(100vh - 25px);
@@ -82,12 +96,25 @@ a:visited {
         border-radius: 5px;
         margin-top: 5px;
         margin-bottom: 5px;
-        border: 1px solid black;
+        border: 1px solid #0007;
         .title-article {
             text-align: center;
         }
         .article-body{
             text-align: justify;
+        }
+        @media only screen and (max-width: 768px){
+            width: 75%;
+            .article-body{
+                font-size: 1.4rem;
+            }
+            .title-article{
+                font-size: 2rem;
+            }
+        }
+        .div-title-body{
+            border-color: #0005;
+            margin-bottom: 5px;
         }
     }
 

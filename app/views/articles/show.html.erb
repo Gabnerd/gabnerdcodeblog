@@ -1,9 +1,11 @@
 <div id="article-page">
-    <a class="button-back" href="/"><%=fa_icon "chevron-left" %> home</a>
+    <a class="button-back" id="desktop" href="/"><%=fa_icon "chevron-left" %> home</a>
+    <a class="button-back" id="mobile" href="/"><%=fa_icon "chevron-left" %></a>
     <div id="article-content">
         <h1 class="title-article">
             <%= @article.title %>
         </h1>
+        <hr class="div-title-body"/>
         <p class="article-body">
             <%= raw @article.body %>
         </p>
